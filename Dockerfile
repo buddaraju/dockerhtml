@@ -1,5 +1,4 @@
-FROM almalinux:8
+FROM httpd:2.4
 MAINTAINER KRISHNA VARMA BUDDARAJU
-RUN dnf update -y && dnf install -y nginx && dnf install -y httpd
-COPY docker-html /var/www/html
+COPY ./docker-html /var/www/html
 EXPOSE 80
