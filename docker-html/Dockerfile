@@ -1,0 +1,4 @@
+FROM httpd:2.4
+MAINTAINER KRISHNA VARMA BUDDARAJU
+COPY docker-html /var/www/html
+EXPOSE 80
